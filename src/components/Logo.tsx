@@ -5,9 +5,14 @@ import { Shield } from "lucide-react";
 interface LogoProps {
   className?: string;
   textSize?: string;
+  mobileCompact?: boolean;
 }
 
-const Logo: React.FC<LogoProps> = ({ className = "", textSize = "text-xl" }) => {
+const Logo: React.FC<LogoProps> = ({ 
+  className = "", 
+  textSize = "text-xl",
+  mobileCompact = false 
+}) => {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <div className="relative">
@@ -19,10 +24,10 @@ const Logo: React.FC<LogoProps> = ({ className = "", textSize = "text-xl" }) => 
         <div className="absolute -top-1 -right-1 w-3 h-3 bg-cyber-blue rounded-full animate-pulse-glow" />
       </div>
       <div className="flex flex-col">
-        <span className={`font-heading font-bold tracking-tight ${textSize} text-white`}>
+        <span className={`font-heading font-bold tracking-tight ${textSize} text-white ${mobileCompact ? 'hidden xs:inline' : ''}`}>
           Firearm Safety Education Instructor GPT
         </span>
-        <span className="text-xs text-cyber-text-secondary font-medium">
+        <span className={`text-xs text-cyber-text-secondary font-medium ${mobileCompact ? 'hidden xs:inline' : ''}`}>
           Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-cyber-gold hover:underline transition-all">AiWebTools.Ai</a>
         </span>
       </div>

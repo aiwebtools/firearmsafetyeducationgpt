@@ -34,7 +34,7 @@ const Header: React.FC = () => {
           rel="noopener noreferrer"
           className="transition-transform hover:scale-105"
         >
-          <Logo textSize="text-lg md:text-xl" />
+          <Logo textSize="text-lg md:text-xl" mobileCompact={true} />
         </a>
 
         {/* Desktop Navigation */}
