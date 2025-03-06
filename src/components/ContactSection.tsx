@@ -85,7 +85,7 @@ const ContactSection: React.FC = () => {
                       className="inline-block"
                     >
                       <Button variant="outline">
-                        Launch AI Assistant
+                        Launch Firearm Safety Education Instructor GPT
                       </Button>
                     </a>
                   </div>
