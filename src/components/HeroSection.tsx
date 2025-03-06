@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 mb-4">
             <a 
               href="https://chatgpt.com/g/g-ksJHqdUmM-firearm-safety-education-instructor-gpt" 
               target="_blank"
@@ -74,6 +74,14 @@ const HeroSection: React.FC = () => {
                 Learn More
               </Button>
             </button>
+          </div>
+          
+          {/* Legal Disclaimer */}
+          <div className="text-xs text-cyber-text-secondary/80 max-w-2xl mb-12 bg-black/30 p-3 rounded-md border border-cyber-gold/10">
+            <p>
+              <strong>Legal Notice:</strong> This AI is for educational purposes only. Information provided does not constitute legal advice. 
+              Users must comply with all applicable federal, state, and local laws regarding firearms. Always prioritize safety.
+            </p>
           </div>
 
           {/* Featured Image */}
