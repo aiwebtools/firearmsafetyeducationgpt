@@ -46,7 +46,7 @@ const HeroSection: React.FC = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight">
-            Your Expert Companion for <br className="hidden md:block" />
+            Your Expert <span className="text-cyber-gold">AI</span> Companion for <br className="hidden md:block" />
             <span className="text-cyber-gold">Responsible Firearm Education</span>
           </h1>
 
@@ -65,7 +65,7 @@ const HeroSection: React.FC = () => {
             >
               <Button variant="primary" size="lg" withGlow>
                 <Shield className="h-5 w-5" />
-                Experience the AI
+                Launch Firearm Safety Education Instructor GPT
               </Button>
             </a>
             <button onClick={scrollToFeatures}>
