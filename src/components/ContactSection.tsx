@@ -82,9 +82,9 @@ const ContactSection: React.FC = () => {
                       href="https://chatgpt.com/g/g-ksJHqdUmM-firearm-safety-education-instructor-gpt" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block"
+                      className="inline-block w-full"
                     >
-                      <Button variant="outline">
+                      <Button variant="outline" className="w-full text-sm md:text-base">
                         Launch Firearm Safety Education Instructor GPT
                       </Button>
                     </a>
