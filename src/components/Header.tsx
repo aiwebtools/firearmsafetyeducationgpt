@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 import Button from "./Button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,13 +60,25 @@ const Header: React.FC = () => {
             Disclaimer
           </a>
           <a 
+            href="https://chatgpt.com/g/g-ksJHqdUmM-firearm-safety-education-instructor-gpt" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyber-text-primary hover:text-cyber-gold transition-colors"
+          >
+            <Button variant="primary" size="sm" withGlow className="flex items-center gap-2">
+              Launch Firearm Safety Education Instructor GPT
+              <ExternalLink className="h-4 w-4" />
+            </Button>
+          </a>
+          <a 
             href="https://www.aiwebtools.ai" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-cyber-text-primary hover:text-cyber-gold transition-colors"
           >
-            <Button variant="primary" size="sm" withGlow>
+            <Button variant="outline" size="sm" className="flex items-center gap-2">
               More AI Tools
+              <ExternalLink className="h-4 w-4" />
             </Button>
           </a>
         </nav>
@@ -116,13 +128,28 @@ const Header: React.FC = () => {
             Disclaimer
           </a>
           <a 
+            href="https://chatgpt.com/g/g-ksJHqdUmM-firearm-safety-education-instructor-gpt" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl text-cyber-text-primary hover:text-cyber-gold transition-colors mb-4"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <Button variant="primary" size="md" withGlow className="flex items-center gap-2">
+              Launch Firearm Safety Education Instructor GPT
+              <ExternalLink className="h-4 w-4" />
+            </Button>
+          </a>
+          <a 
             href="https://www.aiwebtools.ai" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl text-cyber-text-primary hover:text-cyber-gold transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
-            More AI Tools
+            <Button variant="outline" size="md" className="flex items-center gap-2">
+              More AI Tools
+              <ExternalLink className="h-4 w-4" />
+            </Button>
           </a>
           <button 
             className="absolute top-6 right-6 text-white"
