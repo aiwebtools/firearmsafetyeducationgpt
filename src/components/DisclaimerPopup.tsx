@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Shield, Lock, AlertCircle } from "lucide-react";
 import Button from "./Button";
@@ -30,12 +30,38 @@ const DisclaimerPopup: React.FC<DisclaimerPopupProps> = ({ onAccept, isOpen }) =
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
           >
             <div className="glass-card rounded-2xl overflow-hidden border border-cyber-gold/30 shadow-[0_0_25px_rgba(255,215,0,0.15)]">
-              {/* Header */}
-              <div className="bg-gradient-to-r from-cyber-gold/20 to-cyber-blue/20 p-4 flex items-center gap-3">
-                <div className="bg-cyber-gold/10 p-2 rounded-full">
-                  <Shield className="h-6 w-6 text-cyber-gold" />
+              {/* Header with Accept Button */}
+              <div className="bg-gradient-to-r from-cyber-gold/20 to-cyber-blue/20 p-4 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="bg-cyber-gold/10 p-2 rounded-full">
+                    <Shield className="h-6 w-6 text-cyber-gold" />
+                  </div>
+                  <h2 className="font-heading text-xl font-bold text-white">Important Disclaimer</h2>
                 </div>
-                <h2 className="font-heading text-xl font-bold text-white">Important Disclaimer</h2>
+                <Button
+                  variant="primary"
+                  size="sm"
+                  withGlow
+                  className="group relative overflow-hidden"
+                  onClick={onAccept}
+                >
+                  <span className="relative z-10 flex items-center justify-center gap-1 font-bold tracking-wide text-sm">
+                    I AGREE
+                    <motion.div 
+                      initial={{ x: -5, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ delay: 0.2 }}
+                    >
+                      →
+                    </motion.div>
+                  </span>
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-cyber-gold to-cyber-gold-hover"
+                    initial={{ x: "-100%" }}
+                    whileHover={{ x: 0 }}
+                    transition={{ type: "spring", stiffness: 100 }}
+                  />
+                </Button>
               </div>
               
               {/* Content */}
@@ -52,7 +78,7 @@ const DisclaimerPopup: React.FC<DisclaimerPopupProps> = ({ onAccept, isOpen }) =
                 <div className="flex items-start gap-3">
                   <Lock className="h-5 w-5 text-cyber-blue mt-0.5 flex-shrink-0" />
                   <p className="text-cyber-text-secondary text-sm">
-                    By clicking "I Agree" below, you acknowledge that you understand this tool's 
+                    By clicking "I Agree", you acknowledge that you understand this tool's 
                     <span className="text-cyber-blue font-medium"> limitations and disclaimer </span> 
                     as outlined in the Legal Disclaimer section.
                   </p>
@@ -64,34 +90,6 @@ const DisclaimerPopup: React.FC<DisclaimerPopupProps> = ({ onAccept, isOpen }) =
                     This tool is not a substitute for hands-on training with certified instructors.
                   </p>
                 </div>
-              </div>
-              
-              {/* Footer */}
-              <div className="p-4 flex justify-center">
-                <Button
-                  variant="primary"
-                  size="md"
-                  withGlow
-                  className="w-full max-w-[200px] group relative overflow-hidden"
-                  onClick={onAccept}
-                >
-                  <span className="relative z-10 flex items-center justify-center gap-2 font-bold tracking-wide">
-                    I AGREE
-                    <motion.div 
-                      initial={{ x: -10, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ delay: 0.2 }}
-                    >
-                      →
-                    </motion.div>
-                  </span>
-                  <motion.div 
-                    className="absolute inset-0 bg-gradient-to-r from-cyber-gold to-cyber-gold-hover"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: 0 }}
-                    transition={{ type: "spring", stiffness: 100 }}
-                  />
-                </Button>
               </div>
             </div>
           </motion.div>
