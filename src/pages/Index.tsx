@@ -8,6 +8,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import DisclaimerSection from "@/components/DisclaimerSection";
 import ContactSection from "@/components/ContactSection";
+import SEOOptimizer from "@/components/SEOOptimizer";
 
 const Index = () => {
   // Scroll to top on page load
@@ -17,6 +18,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-cyber-background">
+      <SEOOptimizer />
       <Header />
       <main className="flex-grow">
         <HeroSection />
