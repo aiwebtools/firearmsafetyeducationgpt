@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
             </a>
             <span className="hidden md:inline">|</span>
             <a 
-              href="https://aiwebtools.ai/terms-of-services" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank"
               rel="noopener noreferrer" 
               className="hover:text-cyber-gold transition-colors"
