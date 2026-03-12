@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <a 
-            href="https://www.aiwebtools.ai"
+            href="https://aiwebtools.lovable.app/?via=aiwebtools"
             target="_blank" 
             rel="noopener noreferrer"
             className="text-sm text-cyber-text-secondary hover:text-cyber-gold transition-colors"

@@ -22,7 +22,7 @@ const SEOOptimizer: React.FC = () => {
           "email": "Contact@ai-webtools.com"
         },
         "sameAs": [
-          "https://www.aiwebtools.ai"
+          "https://aiwebtools.lovable.app/?via=aiwebtools"
         ]
       },
       {

@@ -28,7 +28,7 @@ const Logo: React.FC<LogoProps> = ({
           Firearm Safety Education Instructor GPT
         </span>
         <span className={`text-xs text-cyber-text-secondary font-medium ${mobileCompact ? 'hidden xs:inline' : ''}`}>
-          Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-cyber-gold hover:underline transition-all">AiWebTools.Ai</a>
+          Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-cyber-gold hover:underline transition-all">AiWebTools.Ai</a>
         </span>
       </div>
     </div>
