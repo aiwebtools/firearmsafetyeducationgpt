@@ -10,7 +10,7 @@ const SEOOptimizer: React.FC = () => {
         "@type": "Organization",
         "@id": "https://www.aiwebtools.ai/#organization",
         "name": "AI WEB TOOLS LLC",
-        "url": "https://www.aiwebtools.ai",
+        "url": "https://aiwebtools.lovable.app/?via=aiwebtools",
         "logo": {
           "@type": "ImageObject",
           "url": "https://firearm-safety-education-instructor-gpt.lovable.app/og-image.png"
