@@ -53,7 +53,7 @@ const ContactSection: React.FC = () => {
                   Explore our full range of AI-powered tools designed to enhance safety, education, and productivity.
                 </p>
                 <a 
-                  href="https://www.aiwebtools.ai" 
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                   target="_blank"
                   rel="noopener noreferrer"
                 >

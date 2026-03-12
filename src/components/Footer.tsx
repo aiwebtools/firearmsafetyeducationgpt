@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             Disclaimer
           </a>
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-cyber-text-secondary hover:text-cyber-gold transition-colors"
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
           </a>
           <div className="mt-6">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
             </a>
             <span className="hidden md:inline">|</span>
             <a 
-              href="https://aiwebtools.ai/terms-of-services" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank"
               rel="noopener noreferrer" 
               className="hover:text-cyber-gold transition-colors"
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <a 
-            href="https://www.aiwebtools.ai"
+            href="https://aiwebtools.lovable.app/?via=aiwebtools"
             target="_blank" 
             rel="noopener noreferrer"
             className="text-sm text-cyber-text-secondary hover:text-cyber-gold transition-colors"
